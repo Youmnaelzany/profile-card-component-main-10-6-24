@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@/styles/globals.css';
+---
+
+<Layout title='Profile card component.'>
+  <main class='relative mx-auto flex items-center justify-center'>
+    <section class='flex'>
+      <img
+        src='/images/bg-pattern-top.svg'
+        alt=''
+        class='absolute left-[-119px] top-[-277px] md:left-[-279px] md:top-[-653px]'
+      />
+    </section>
+    <section class='flex h-[23.375rem] w-[21.875rem] flex-col'>
+      <div class=''>
+        <img src='/images/bg-pattern-card.svg' alt='' class='rounded-t-lg' />
+      </div>
+      <div
+        class='relative flex h-[15rem] w-[100%] flex-col items-center justify-center gap-14 rounded-b-lg bg-white text-center'
+      >
+        <div class='absolute -top-16'>
+          <img
+            src='/images/image-victor.jpg'
+            alt=''
+            class='size-24 rounded-full border-[5px] border-solid border-white'
+          />
+        </div>
+        <div class='mt-4 flex flex-col gap-[0.81rem]'>
+          <h1 class='text-lg font-bold leading-normal text-[#2E3349]'>
+            Victor Crest
+            <span class='ml-2 font-light text-[#6B7082]'>26</span>
+          </h1>
+          <h2 class='text-sm font-light leading-normal text-[#6B7082]'>
+            London
+          </h2>
+        </div>
+        <div
+          class='relative flex items-center justify-evenly gap-10 before:absolute before:-top-6 before:h-[0.0625rem] before:w-[21.875rem] before:bg-[#E8E9EC]'
+        >
+          <div class='flex flex-col gap-2'>
+            <h3 class='text-lg font-bold leading-normal text-[#2E3349]'>80K</h3>
+            <h4
+              class='text-[0.625rem] font-normal leading-normal tracking-[0.09375rem] text-[#6B7082]'
+            >
+              Followers
+            </h4>
+          </div>
+          <div class='flex flex-col gap-2'>
+            <h3 class='text-lg font-bold leading-normal text-[#2E3349]'>
+              803K
+            </h3>
+            <h4
+              class='text-[0.625rem] font-normal leading-normal tracking-[0.09375rem] text-[#6B7082]'
+            >
+              Likes
+            </h4>
+          </div>
+          <div class='flex flex-col gap-2'>
+            <h3 class='text-lg font-bold leading-normal text-[#2E3349]'>
+              1.4K
+            </h3>
+            <h4
+              class='text-[0.625rem] font-normal leading-normal tracking-[0.09375rem] text-[#6B7082]'
+            >
+              Photos
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='flex'>
+      <img
+        src='/images/bg-pattern-bottom.svg'
+        alt=''
+        class='absolute right-[-187px] top-[305px] md:bottom-[-854px] md:right-[-190px]'
+      />
+    </section>
+  </main>
+</Layout>
